@@ -1,10 +1,17 @@
+import random
 
 
 class dzivnieks():
-    vards = str("Ruksis")
-    print(vards)
+    def __init__(self,vards,kajas):
+        self.vards=vards
+        self.kajas=kajas
+    def skana():
+        print("Random animal noise")
 
+#dzivnieks.skana()
 
-dzivnieks()
+dzivnieks1 = dzivnieks("Reksis", 4)
+
+print(dzivnieks1.vards, dzivnieks1.kajas)
 
 
