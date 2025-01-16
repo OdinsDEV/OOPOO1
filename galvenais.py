@@ -15,12 +15,28 @@ class suns(dzivnieks):
 
 class kakis(dzivnieks):
     def __init__(self, vards, kajas):
-        print("Mjau!")
+        super().__init__(vards,kajas)
+        self.vards="Kaķītis "+self.vards
 
-d1=dzivnieks("Gauja", 4)
-d1.skanja()
-k1=kakis("Murris", 4)
-s1=suns("Reksis", 4)
+listDzivnieki = []        
 
-print(s1)
+listDzivnieki.append(suns("volvis", 4))
+listDzivnieki.append(suns("Bella", 4))
+listDzivnieki.append(suns("Dalmacietis", 4))
+
+listDzivnieki.append(kakis("Pichuks", 4))
+listDzivnieki.append(kakis("Rozine", 4))
+listDzivnieki.append(kakis("Rizhais", 4))
+
+for dzivnieks in listDzivnieki:
+    print(dzivnieks)
+    dzivnieks.skanja()
+
+
+#d1=dzivnieks("Gauja", 4)
+# d1.skanja()
+# k1=kakis("Murris", 4)
+# s1=suns("Reksis", 4)
+
+#print(s1)
 
