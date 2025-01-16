@@ -5,7 +5,7 @@ class dzivnieks(ABC): #Parent class
         self.vards=vards
         self.kajas=kajas
 
-    @abstractmethod        
+    @abstractmethod    #parāda ka nākamā metode būs abstrakta    
     def skanja(self):
         print("Random animal noise")
     def __str__(self):
@@ -34,13 +34,15 @@ listDzivnieki = []       #izveidots dzivnieku saraksts
 listDzivnieki.append(suns("volvis", 4)) #sarakstam pievieno dzivnieku
 listDzivnieki.append(suns("Bella", 4))
 listDzivnieki.append(suns("Dalmacietis", 4))
+listDzivnieki.append(suns("Žiglais", 4))
+
 
 listDzivnieki.append(kakis("Pichuks", 4))
 listDzivnieki.append(kakis("Rozine", 4))
 listDzivnieki.append(kakis("Rizhais", 4))
 
 listDzivnieki.append(govs("Gauja", 4))
-
+listDzivnieki.append(govs("Venta", 4))
 
 for dzivnieks in listDzivnieki: #Izprintē katru dzīvnieku 
     print(dzivnieks)
