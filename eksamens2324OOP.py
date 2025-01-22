@@ -1,13 +1,16 @@
 class doktorats():
-    def __init__(self, nosaukums="N/A", skaits=0):
-        self.skaits = skaits
+    nosaukums= "nezināms"
+    pacientuSkaits = 0
+    def __init__(self, nosaukums="N/A", pacientuSkaits=0):
+        self.nosaukums = nosaukums
+        self.pacientuSkaits = pacientuSkaits
     def ievade(self):
         self.nosaukums= input("Ievadiet nosaukumu: ")
         self.skaits = int(input("Ievadiet pacientu skaitu: "))
 
     def izvade(self):
         galotne=""
-        if (self.skaits%10 !=1):
+        if (self.pacientuSkaits%10 !=1):
             galotne="s"
         print(f"Doktorāts {self.nosaukums} apkalpo {self.skaits} pacientu{galotne}.")    
 
