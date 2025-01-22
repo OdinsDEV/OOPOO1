@@ -19,6 +19,6 @@ class VidusskolasSkolotajs(Skolotajs):
     def cikStundasKopa(self):
         self.stunduskaitsned= self.pirmaisPrieksmetsStundas + self.otraisPrieksmetsStundas
     def izvade():    
-        print(f"abc")
+        print(f"Vidusskolas (tips - {self.tips}) skolotājs {self.uzvards} ")
 
     
